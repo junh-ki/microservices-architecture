@@ -1,11 +1,11 @@
 package com.junhki.loans.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 
-@Data
-@ToString
+@Getter @Setter @ToString
 public class Customer {
 
     private int customerId;
