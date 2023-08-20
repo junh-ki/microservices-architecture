@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: mrki102/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - mrki102-network
+    
+  loans:
+    image: mrki102/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - mrki102-network
+    
+  cards:
+    image: mrki102/cards:latest
+    mem_limit: 700m
+    ports:
+      - "8070:8070"
+    networks:
+      - mrki102-network
+    
+networks:
+  mrki102-network:
